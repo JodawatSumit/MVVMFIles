@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Ausbildungsheld</string>
+
+    <string name="phone_state_permission_title">Phone State Permission is necessary</string>
+    <string name="camera_title">Camera Permission is necessary</string>
+    <string name="write_external_storage_title">Write external storage Permission is necessary</string>
+
+    <string name="default_notification_message">You have a new notifications</string>
+
+    <string name="default_font">@string/regular_font</string>
+    <string name="regular_font">AvenirNextLTPro-Regular.ttf</string>
+    <!--<string name="extra_bold_font">nunito_extra_bold.ttf</string>-->
+    <!--<string name="light_font">nunito_light.ttf</string>-->
+    <string name="bold_font">AvenirNextLTPro-Bold.ttf</string>
+
+    <string name="str_global_error_msg">Something went wrong</string>
+
+</resources>

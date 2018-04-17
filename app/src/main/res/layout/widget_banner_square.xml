@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="widget"
+            type="com.support.widgets.WidgetsViewModel" />
+
+        <variable
+            name="shouldFit"
+            type="Boolean" />
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:onClick="@{clickListener}"
+        android:orientation="vertical"
+        app:shouldFit="@{shouldFit}" />
+
+</layout>

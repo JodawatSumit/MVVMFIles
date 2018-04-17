@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#341504</color>
+    <color name="colorAccent">#E96426</color>
+
+    <color name="app_background_white">#FFF</color>
+    <color name="app_background_themed">@color/colorPrimary</color>
+
+    <color name="text_white">#FFF</color>
+    <color name="text_themed">@color/colorPrimary</color>
+
+    <color name="light_color">#f1f1f1</color>
+
+    <color name="notification_color">@color/colorPrimary</color>
+</resources>

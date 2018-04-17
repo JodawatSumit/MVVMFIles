@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+    buildToolsVersion BUILD_TOOLS_VERSION
+    defaultConfig {
+        applicationId 'com.mvvm.demo'
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+        versionName VERSION_NAME
+        versionCode VERSION_CODE
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled MINIFY_ENABLE
+            shrinkResources SHRINK_RESOURCES
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled true
+    }
+    productFlavors {
+    }
+}
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+def retrofitVersion = RETROFIT_VERSION
+def googleVersion = GOOGLE_VERSION
+def supportLibVersion = SUPPORT_LIB_VERSION
+def glideVersion = GLIDE_VERSION
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile "com.android.support:appcompat-v7:$supportLibVersion"
+    compile "com.android.support:design:$supportLibVersion"
+    compile project(':support')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'br.com.zbra:android-linq:1.0.1'
+    compile 'com.makeramen:roundedimageview:2.3.0'
+    compile 'com.github.chrisbanes:PhotoView:2.1.3'
+}
