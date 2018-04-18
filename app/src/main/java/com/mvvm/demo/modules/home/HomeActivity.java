@@ -1,10 +1,8 @@
 package com.mvvm.demo.modules.home;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.Toolbar;
 import android.view.WindowManager;
@@ -17,14 +15,9 @@ import com.support.base.CoreActivity;
 import com.support.events.DismisLoading;
 import com.support.events.ShowError;
 import com.support.events.ShowLoading;
-import com.support.retrofit.network.ApiClient;
-import com.support.retrofit.network.ObserverUtil;
-import com.support.retrofit.network.WebserviceBuilder;
 import com.support.utils.Event;
-import com.support.utils.FragmentUtils;
-import com.support.utils.ResourceUtils;
 
-public class HomeActivity extends CoreActivity<HomeActivity, HomeActivityViewModel, ActivityHomeBinding>  {
+public class HomeActivity extends CoreActivity<HomeActivity, HomeActivityViewModel, ActivityHomeBinding> {
 
     public static Intent getIntent(Context context, Bundle bundle) {
         return new Intent(context, HomeActivity.class).putExtras(bundle);

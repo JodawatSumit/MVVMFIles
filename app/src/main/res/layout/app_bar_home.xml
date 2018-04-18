@@ -7,6 +7,7 @@
     <data>
 
         <import type="android.view.View"/>
+        <import type="com.support.base.ActivityViewModel"/>
 
         <variable
             name="vm"
@@ -26,7 +27,7 @@
 
             <include
                 layout="@layout/tool_bar"
-                app:vm="@{vm}" />
+                app:vm="@{((ActivityViewModel)vm)}" />
 
             <FrameLayout
                 android:id="@+id/container"

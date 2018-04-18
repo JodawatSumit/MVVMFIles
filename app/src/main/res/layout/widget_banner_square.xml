@@ -7,9 +7,9 @@
             name="widget"
             type="com.support.widgets.WidgetsViewModel" />
 
-        <variable
-            name="shouldFit"
-            type="Boolean" />
+        <!--<variable-->
+            <!--name="shouldFit"-->
+            <!--type="Boolean" />-->
 
         <variable
             name="clickListener"
@@ -22,6 +22,8 @@
         android:layout_height="200dp"
         android:onClick="@{clickListener}"
         android:orientation="vertical"
-        app:shouldFit="@{shouldFit}" />
+         />
+
+    <!--app:shouldFit="@{shouldFit}"-->
 
 </layout>

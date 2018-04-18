@@ -6,8 +6,8 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
-        classpath 'com.google.gms:google-services:3.1.0'
+        classpath 'com.android.tools.build:gradle:3.1.1'
+        classpath 'com.google.gms:google-services:3.1.2'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -16,16 +16,16 @@ buildscript {
 
 project.ext {
     APPLICATION_ID = "com.amiro.fashions"
-    BUILD_TOOLS_VERSION = "26.0.2"
+    BUILD_TOOLS_VERSION = "27.0.3"
 
-    COMPILE_SDK_VERSION = 26
-    TARGET_SDK_VERSION = 26
+    COMPILE_SDK_VERSION = 27
+    TARGET_SDK_VERSION = 27
     MIN_SDK_VERSION = 18
 
     VERSION_CODE = 3
     VERSION_NAME = "1.0"
 
-    SUPPORT_LIB_VERSION = "26.0.1"
+    SUPPORT_LIB_VERSION = "27.1.1"
     RETROFIT_VERSION = "2.3.0"
     GOOGLE_VERSION = "11.6.0"
     GLIDE_VERSION = "3.7.0"

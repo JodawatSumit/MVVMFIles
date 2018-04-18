@@ -1,10 +1,10 @@
 package com.support.retrofit.network;
 
-import android.support.v4.BuildConfig;
 import android.util.Log;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.support.BuildConfig;
 import com.support.base.CoreApp;
 
 import java.io.File;
